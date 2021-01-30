@@ -1,0 +1,215 @@
+html, body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #1e1e1e;
+    color: #e1e1e1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  
+  .bg-fire {
+    background: linear-gradient(to top right, red, #3d3d3d 25%);
+  }
+  .fire {
+    background-color: red;
+  }
+  
+  .bg-grass {
+    background: linear-gradient(to top right, greenyellow, #3d3d3d 25%);
+  }
+  .grass {
+    background-color: greenyellow;
+  }
+  
+  .bg-electric {
+    background: linear-gradient(to top right, blue, #3d3d3d 25%);
+  }
+  .electric {
+    background-color: blue;
+  }
+  
+  .bg-water {
+    background: linear-gradient(to top right, skyblue, #3d3d3d 25%);
+  }
+  .water {
+    background-color: skyblue;
+  }
+  
+  .bg-ground {
+    background: linear-gradient(to top right, burlywood, #3d3d3d 25%);
+  }
+  .ground {
+    background-color: burlywood;
+  }
+  
+  .bg-rock {
+    background: linear-gradient(to top right, grey, #3d3d3d 25%);
+  }
+  .rock {
+    background-color: grey;
+  }
+  
+  .bg-fairy {
+    background: linear-gradient(to top right, pink, #3d3d3d 25%);
+  }
+  .fairy {
+    background-color: pink;
+  }
+  
+  .bg-poison {
+    background: linear-gradient(to top right, purple, #3d3d3d 25%);
+  }
+  .poison {
+    background-color: purple;
+  }
+  
+  .bg-bug {
+    background: linear-gradient(to top right, orange, #3d3d3d 25%);
+  }
+  .bug {
+    background-color: orange;
+  }
+  
+  .bg-dragon {
+    background: linear-gradient(to top right, black, #3d3d3d 25%);
+  }
+  .dragon {
+    background-color: black;
+  }
+  
+  .bg-psycho {
+    background: linear-gradient(to top right, purple, #3d3d3d 25%);
+  }
+  .psycho {
+    background-color: purple;
+  }
+  
+  .bg-flying {
+    background: linear-gradient(to top right, skyblue, #3d3d3d 25%);
+  }
+  .flying {
+    background-color: skyblue;
+  }
+  
+  .bg-fighting {
+    background: linear-gradient(to top right, red, #3d3d3d 25%);
+  }
+  .fighting {
+    background-color: red;
+  }
+  
+  .bg-normal {
+    background: linear-gradient(to top right, white, #3d3d3d 25%);
+  }
+  .normal {
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    text-align: center;
+  
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap; /*quebra linha*/
+  }
+  
+  .card {
+    width: calc(25% - 20px);
+    margin: 10px;
+    background-color: rgb(173, 172, 172);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3d3d3d;
+  }
+  
+  .card:hover {
+    cursor: pointer;
+  }
+  
+  .card .title h2 {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  
+  .card .img {
+    margin: 40px auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-size: 400% 400%;
+    background-position: 0 0;
+    animation: bg-out 300ms  ease-in forwards 1;
+    padding: 10px;
+  }
+  
+  .card:hover .img {
+    animation: bg-in 300ms  ease-in forwards 1;
+  }
+  
+  .card .img img {
+    max-width: 220px;
+  
+  }
+  
+  .card .type {
+    color: #1e1e1e;
+    border-radius:10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 4px;
+  }
+  
+  .card .type p {
+  margin: o;
+  }
+  
+  .card .favorite {
+    display: none;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .card {
+      width: calc(50% - 20px)
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card {
+      width: calc(100% - 20px)
+    }
+  }
+  
+  @keyframes bg-in {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 0% 100%;
+    }
+  }
+  
+  @keyframes bg-out {
+    0% {
+      background-position: 0% 100%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
